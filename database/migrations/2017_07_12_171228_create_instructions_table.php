@@ -15,9 +15,9 @@ class CreateInstructionsTable extends Migration
     {
         Schema::create('instructions', function (Blueprint $table) {
             $table->increments('id');
-            $table->longText('opcode');
-            $table->string('hex_opcode', 2);
-            $table->longText('description');
+            $table->string('opcode');
+            $table->string('operation');
+            $table->longText('description')->nullable();
         });
     }
 

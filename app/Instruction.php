@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Instruction extends Model
 {
-    public $table = "instructions";
+    protected $table = "instructions";
     public $timestamps = false;
+
+    protected $guarded = [];
 }
